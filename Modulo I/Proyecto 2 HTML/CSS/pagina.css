@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ /*CSS Barra principal*/
+ header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(236, 234, 234, 0.719);
+    height: 6.5vh;
+}
+
+/*Tamaño de imagen*/
+.tam{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+/*Alienación de botnones derechos*/
+#menu_derecha{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    padding-top: 0.4%;
+    width: 15vw;
+}
+
+/*Estilo del texto dentro del boton*/
+.texto_boton{   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: smaller; 
+}
+
+/*Tamaño de boton*/
+.boton{
+    text-align: center;
+    width: 5vw;
+    height: 4vh;
+}
+
+/*Effectos de iconos texto*/
+.boton:hover{
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+/*Contendor barra*/
+#contenedor_barra{
+    width: 75vw;
+    margin-left: 1%;
+}
+
+/*Estilo barra*/
+.barra{
+    width: 75vw;
+    height: 3vh;
+    border-radius: 25px;
+    background-color: rgba(214, 209, 209, 0.664);
+    border:none;
+}
+
+/*Text en la barra*/
+input::placeholder{
+    text-align: left;
+    padding-left: 3%;
+}
+
+/*Contenedor imagenes izquierda*/
+#centar_imagenes_izq{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+img {
+    border-radius: 8%;
+}

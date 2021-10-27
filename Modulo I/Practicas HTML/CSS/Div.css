@@ -1,0 +1,31 @@
+body{
+    background-color: cornflowerblue;
+    margin: 0;
+}
+
+#contenedor_principal{
+    background-color: cornsilk;
+    height: 100%;
+    width: 100%;
+}
+
+#encabzado_izquierdo{
+    background-color: white;
+    height: 8vh;
+    float: left;
+}
+
+#encabezado_centro{
+    background-color: rgb(65, 170, 231);
+    height: 8vh;
+    float: center;
+}
+
+#encabezado_derecho{
+    background-color: rgb(67, 235, 165);
+    height: 8vh;
+    float: right;
+}
+
+
+

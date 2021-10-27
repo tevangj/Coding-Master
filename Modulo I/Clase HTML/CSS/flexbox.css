@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    background-color: #cccc;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+#article2{
+    display: flex; /*--El contenedor padre siempre tiene que ser flex-----*/
+    justify-content: space-around;
+}

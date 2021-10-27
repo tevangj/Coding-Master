@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+}   
+
+ /*CSS Barra principal*/
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgba(236, 234, 234, 0.719);
+    height: 6.5vh;
+}
+
+/*Tamaño de imagen*/
+.tam{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+/*Alienación de botnones derechos*/
+#menu_derecha{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    padding-top: 0.4%;
+    width: 15vw;
+}
+
+/*Estilo del texto dentro del boton*/
+.texto_boton{   
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: smaller; 
+}
+
+/*Tamaño de boton*/
+.boton{
+    text-align: center;
+    width: 5vw;
+    height: 4vh;
+}
+
+/*Effectos de iconos texto*/
+.boton:hover{
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+/*Contendor barra*/
+#contenedor_barra{
+    width: 75vw;
+    margin-left: 1%;
+}
+
+/*Estilo barra*/
+.barra{
+    width: 75vw;
+    height: 3vh;
+    border-radius: 25px;
+    background-color: rgba(214, 209, 209, 0.664);
+    border:none;
+}
+
+/*Text en la barra*/
+input::placeholder{
+    text-align: left;
+    padding-left: 3%;
+}
+
+/*Contenedor imagenes izquierda*/
+#centar_imagenes_izq{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*Contenedor de foto y texto*/
+.recuadro{
+   border-radius: 3%;
+   transition:.5s ease-in-out;
+   display: grid;
+   grid-template-rows: auto;
+   background-color: whitesmoke;
+   width: 20vw;
+   height: 100%;
+}
+
+/*Ancho de la foto*/
+.foto{
+    border-start-end-radius: 3%;
+    border-start-start-radius: 3%;
+    width: 20vw;
+    height:30vh;
+}
+
+/*Cuadro del like, comentario y visitas*/
+.cuadro_texto{
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 1px;
+    border-top-style: solid;
+    border-color: royalblue;
+    width: 20vw;
+    height: 8vh;
+}
+
+/*Imagen comentario*/
+.comentario{
+    float:left;
+    margin-left: 2%;
+    margin-top: 1%;
+    max-height: 3vh;
+    max-width: 3vw;
+}
+
+/*Mesaje comentario*/
+.ms1{
+    float:left;
+    margin-left: 4%;
+    max-height: 2vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/*Mensaje visitas*/
+.ms2{
+    margin-left: 2%;
+    white-space: nowrap;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/*Effecto fotos*/
+.recuadro:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+/*Effecto iconos*/
+.icono_izq:hover{
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Safari 3-8 */
+    transform: scale(1.3); 
+}
+
+.margen0{
+    margin-right: 0 !important; 
+}
+
+@media only screen and (max-width: 576px){
+
+    .pc{
+         width: 100%;
+    }   
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+
+    .pm{
+         width: 50%;
+    }   
+}

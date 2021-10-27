@@ -1,0 +1,57 @@
+#div1 > div {
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    float: left;
+}
+
+#div2 > div {
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    float: left;
+}
+
+#div1 > div:nth-child(1){
+    background-color: blue;
+    float: left;
+}
+
+#div1 > div:nth-child(2){
+    background-color: purple;
+    float: left;
+}
+
+#div1 > div:nth-child(3){
+    background-color: red;
+    float: left;
+}
+
+#div1 > div:nth-child(4){
+    background-color:violet;
+    float: left;
+    clear: both;
+}
+
+/*--------------------------div2--------------------------*/
+
+#div2 > div:nth-child(1){
+    background-color: blue;
+    float: left;
+    display: none;
+}
+#div2 > div:nth-child(2){
+    background-color: purple;
+    float: left;
+    clear: both;
+}
+
+#div2 > div:nth-child(3){
+    background-color: red;
+    float: left;
+}
+
+#div2 > div:nth-child(4){
+    background-color:violet;
+    float: left;
+}

@@ -1,0 +1,97 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 19%, rgba(34,189,193,1) 41%, rgba(20,27,96,1) 42%, rgba(35,43,119,1) 99%, rgba(20,27,96,1) 100%); 
+}
+
+#titulo{
+    font-size: xx-large;
+    color:white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Ptitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+p{
+    font-weight:1000;
+    color: white;
+}
+
+#introduccion{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+#instrucciones{
+  color: white;
+  margin: 1%;
+  margin-left: 26.7%;   
+}
+
+#formatoBCrearcuenta{ 
+margin: 1%;
+display: grid;
+justify-content: center;
+align-items: center;
+grid-auto-rows: minmax(55px, auto);
+}
+
+#centarTexto{
+    margin-top: 9%;
+    margin-left: 3%;
+}
+
+#distribucionBotones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+#textoAdminCuenta{
+    margin-left: 35%; 
+}
+
+.custom {
+    width: 15vw !important;
+}
+
+.custom:hover{
+    background-color: rgb(10, 202, 90);
+    border-color: rgb(10, 202, 90);
+}
+
+#ventanadeResumenOperaciones {
+    
+    margin-left: 8.6%;
+    margin-top: 1%; 
+    height: 10vh;
+    width: 39vw;
+}
+
+#margenEtiquetaCrearClave{
+    margin-top: 3%;
+}
+
+#margenEtiquetaConsultarSaldo{
+    margin-top: 3%;
+}
+
+#margenEtiquetaDepositarDinero{
+    margin-top: 3%;
+}
+
+#margenEtiquetaRetirarDinero{
+    margin-top: 3%;
+}
+
+#resumenUsuario{
+    margin-top: 3%;
+}

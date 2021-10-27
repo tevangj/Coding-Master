@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pagina.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--Contendor de la imagen-->
+       <div>
+            <img class="tam" src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="">
+      </div> 
+
+      <!--Contendor de las 3 opciones en la derecha-->
+       <div id="menu_derecha">
+           <div class="boton">
+               <span class="texto_boton">Inicio</span>
+           </div>
+           <div class="boton">
+               <span class="texto_boton">Hoy</span>
+           </div>
+           <div class="boton">
+               <span class="texto_boton">Siguiente</span>
+           </div>
+      </div>
+
+      <!--Contendor de la barra de busqueda-->
+      <div id="contenedor_barra">
+       <!--Barra Bootstrap-->
+       <nav class="navbar">
+           <form class="container-fluid">
+             <div class="input-group">
+               <span class="input-group-text" id="basic-addon1">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                 </svg>
+               </span>
+               <input type="text" class="form-control" placeholder="Busque" aria-label="Busque" aria-describedby="basic-addon1">
+             </div>
+           </form>
+         </nav>
+      </div>
+
+       <!--Contendor de las 2 imagenes izquierdas-->
+       <div id="centar_imagenes_izq">
+          <div class="icono_izq">
+           <img class="tam" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="">
+          </div>
+          <div class="icono_izq">
+           <img class="tam" src="https://www.clipartmax.com/png/middle/59-593746_amateur-radio-amateur-radio-%40-disco-romeiko-black-chat-icon-png.png" alt="">
+         </div>
+       </div>
+    </header>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-2">
+            <div class="row gap-3">
+                    <img src="https://picsum.photos/400/600/?random=1" class="rounded-pill" alt="">
+                    <img src="https://picsum.photos/300/400/?random=2" alt="">
+                    <img src="https://picsum.photos/250/500/?random=3" alt="">
+                    <img src="https://picsum.photos/500/700/?random=10" alt=""> 
+        </div>
+        </div>       
+        <div class="col-2">
+            <div class="row gap-3">
+                <img src="https://picsum.photos/300/300/?random=1" alt="">
+                <img src="https://picsum.photos/340/400/?random=2" alt="">
+                <img src="https://picsum.photos/370/500/?random=3" alt="">
+                <img src="https://picsum.photos/430/700/?random=5" alt=""> 
+                <img src="https://picsum.photos/700/700/?random=5" alt=""> 
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row gap-3">
+                <img src="https://picsum.photos/300/600/?random=1" alt="">
+                <img src="https://picsum.photos/400/400/?random=2" alt="">
+                <img src="https://picsum.photos/400/500/?random=20" alt="">
+                <img src="https://picsum.photos/500/700/?random=4" alt=""> 
+                <img src="https://picsum.photos/1400/700/?random=11" alt=""> 
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row gap-3">
+                <img src="https://picsum.photos/700/600/?random" alt="">
+                <img src="https://picsum.photos/300/400/?random" alt="">
+                <img src="https://picsum.photos/401/500/?random" alt="">
+                <img src="https://picsum.photos/251/700/?random" alt="">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row gap-3">
+                <img src="https://picsum.photos/460/600/?random=1" alt="">
+                <img src="https://picsum.photos/200/400/?random=2" alt="">
+                <img src="https://picsum.photos/400/500/?random=3" alt="">
+                <img src="https://picsum.photos/500/700/?random=66" alt=""> 
+                <img src="https://picsum.photos/3040/600/?random=1" alt="">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="row gap-3">
+                <img src="https://picsum.photos/395/600/?random=1" alt="">
+                <img src="https://picsum.photos/279/400/?random=2" alt="">
+                <img src="https://picsum.photos/250/470/?random=3" alt="">
+                <img src="https://picsum.photos/500/700/?random=4" alt=""> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>        
+</body>
+</html>

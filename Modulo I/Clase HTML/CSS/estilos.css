@@ -1,0 +1,29 @@
+body {
+    background-color: rebeccapurple;
+}
+
+#p {
+    color: aquamarine
+}
+
+#p_modificado {
+    background-color: yellow;
+    color: blue;
+}
+
+.padre p {
+    color: blue;
+    font-family:'Courier New', Courier, monospace
+}
+
+.padre div {
+    background-color: green;
+}
+
+#div2 {
+    color: white
+}
+
+#div2 p {
+    color: red;
+}

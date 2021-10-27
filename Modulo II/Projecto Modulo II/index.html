@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src ="JS/usuario.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>   <!--section del titulo-->
+        <div id="Ptitulo">
+            <h1 id="titulo"> BANCO LANA</h1>
+        </div>
+    </section> 
+
+    <section>
+        <p id="introduccion"> Bienvenido al numero Banco LANA, donde solo necesitas crear un nombre unico para dar de alta una cuenta.</p>
+        <div id=instrucciones>
+            <p> Los pasos son muy sencillos: </p>
+            <ol>
+                <li>Dar click en el boton "Crear una cuenta".</li>
+                <li>Crear un nombre de usuario.</li>
+                <li>Crear una clave.</li>
+                <li>Hacer un deposito minímo de 10 pesos.</li>
+                <li>Puedes tener en tu cuenta hasta 990 pesos para tus gastos!!</li>
+            </ol> 
+     </div>
+    </section>
+
+    <section id="formatoBCrearcuenta"><!--section de los boton para crear cuenta-->
+        <button type="button" class="btn btn-primary btn-lg custom" data-bs-toggle="modal" data-bs-target="#botonCrearUsuario">Crear cuenta </button>
+        <p id="centarTexto">Que esperas, abre tu cuenta</p>
+    </section>
+
+    <section>
+        <p id="textoAdminCuenta">Aqui estan las siguientes opciones para administrar tu cuenta</p>
+    </section>
+
+    <section id="distribucionBotones"><!--section de los botones para administrar la cuenta-->
+        <button type="button" class="btn btn-primary btn-lg custom" data-bs-toggle="modal" data-bs-target="#botonConsultarSaldo">Consultar Saldo</button>
+        <button type="button" class="btn btn-primary btn-lg custom" data-bs-toggle="modal" data-bs-target="#botonDepositarDinero">Realizar un deposito</button>
+        <button type="button" class="btn btn-primary btn-lg custom" data-bs-toggle="modal" data-bs-target="#botonRetirarDinero">Realizar un retiro</button>
+    </section>
+    
+    <section> <!-- Ventanas modales -->
+        <!--Ventana crear usuario-->
+        <div class="modal fade" id="botonCrearUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tituloVentanaCrearUsuario">Crear cuentahabiente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label class="form-label">Favor de crear un nombre de cuentahabiente:</label>
+                            <input type="text" id="crearNombredeUsuario" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaCrearClave">
+                            <label class="form-label">Favor de crear una clave de cuentahabiente:</label>
+                            <input type="password" id="crearClavedeUsuario" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaCrearClave">
+                            <label class="form-label">Favor de hacer un deposito minimo de 10 pesos y maximo 990 </label>
+                            <input type="text" id="primerDeposito" class="form-control form-control-sm">    
+                        </div>
+
+                    <div class="modal-footer">
+                        <button type="button" id="agregarNuevoUsuario" onclick="crearUsuario();" data-bs-dismiss="modal" class="btn btn-primary">Crear cuenta</button><!--Este boton debe activar la funcion de crearUsuario-->
+                        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--Ventana fin usuario-->
+
+        <!--Ventana consultar saldo-->
+        <div class="modal fade" id="botonConsultarSaldo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tituloVentanaConsultarSaldo">Consultar Saldo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label class="form-label">Favor de ingresar nombre de cuentahabiente:</label>
+                            <input type="text" id="ingresarNombredeUsuario" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaConsultarSaldo">
+                            <label class="form-label">Favor de ingresar clave de cuentahabiente:</label>
+                            <input type="password" id="ingresarClavedeUsuario" class="form-control form-control-sm">    
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="agregarNuevoUsuario" onclick="consultarSaldo();" data-bs-dismiss="modal" class="btn btn-primary">Hacer consulta</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancer</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Ventana consultar saldo-->
+
+        <!--Ventana depositar saldo-->
+        <div class="modal fade" id="botonDepositarDinero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tituloVentanaDepositarDinero">Deposito de dinero</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label class="form-label">Favor de ingresar nombre de cuentahabiente:</label>
+                            <input type="text" id="nombreDeposito" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaDepositarDinero">
+                            <label class="form-label">Favor de ingresar clave de cuentahabiente:</label>
+                            <input type="password" id="nombreClave" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaDepositarDinero">
+                            <label class="form-label">Ingresar monto a depositar</label>
+                            <input type="text" id="depositarDinero" class="form-control form-control-sm">    
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="agregarNuevoUsuario" onclick="realizarDeposito();" data-bs-dismiss="modal" class="btn btn-primary">Hacer deposito</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Ventana depositar saldo-->
+
+        <!--Ventana retirar dinero-->
+        <div class="modal fade" id="botonRetirarDinero" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="tituloVentanaRetirarDinero">Realizar un retiro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label class="form-label">Favor de ingresar nombre de cuentahabiente:</label>
+                            <input type="text" id="nombreRetiro" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaRetirarDinero">
+                            <label class="form-label">Favor de ingresar clave de cuentahabiente</label>
+                            <input type="password" id="claveRetiro" class="form-control form-control-sm">    
+                        </div>
+                        <div id="margenEtiquetaRetirarDinero">
+                            <label class="form-label">Ingresar monto a retirar</label>
+                            <input type="text" id="retirarDinero" class="form-control form-control-sm">    
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="agregarNuevoUsuario" onclick="realizarRetiro();" data-bs-dismiss="modal" class="btn btn-primary">Hacer retiro</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Ventana consultar saldo-->
+
+    </section>
+
+    <!-- Resumen operaciones -->
+    <section id="ventanadeResumenOperaciones">
+        <div class="container" id="margen">
+            <p> Resumen de operaciones:</p>
+            <table class="table">
+                    <ul class="list-group" id="consultarDeposito">
+                    </ul>
+              </table>
+        </div>
+
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src ="JS/script.js"></script>
+</html>

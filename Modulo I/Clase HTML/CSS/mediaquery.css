@@ -1,0 +1,12 @@
+body{
+    background-color: greenyellow;
+}
+
+@media only screen and (min-width: 600px ){
+    body{
+        background-color: rgb(233, 93, 93);
+    }
+    .p-white{
+         color: white;
+    }
+}
